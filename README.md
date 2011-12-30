@@ -41,7 +41,7 @@ This will automatically validate the format of the URL to match Vimeo's, and wil
 
 ## Customizing validation message
 
-You can customize the ActiveRecord validation message by passing the `message` parameter to `has_vimeo_video`.
+You can customize the ActiveRecord validation message by passing the `message` option to `has_vimeo_video`.
 
 
   ```ruby
