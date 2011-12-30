@@ -30,6 +30,10 @@ describe HasVimeoVideo::VimeoVideo do
     new_video("http://vimeo.com/000000000").info.should be_nil
   end
   
+  it "should have a nil thumbnail if the video doesn't exist" do
+    new_video("http://vimeo.com/000000000").thumbnail.should be_nil
+  end
+  
   it "should correctly parse video_url" do
     new_video(" http://vimeo.com/6428069 ").id.should == "6428069"
     new_video("xyzhttp://vimeo.com/6428069bar").id.should == "6428069"

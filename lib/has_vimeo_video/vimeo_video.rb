@@ -35,6 +35,7 @@ module HasVimeoVideo
     end
     
     def thumbnail
+      return unless info
       info["thumbnail_large"]
     end
 
