@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["what@engage.is"]
   s.homepage    = ""
   s.summary     = %q{Adds Vimeo integration to ActiveRecord}
-  s.description = %q{Adds video URL validation and API integration for using Vimeo on ActiveRecord}
+  s.description = %q{Adds video URL validation and API integration for using Vimeo on ActiveRecord models}
 
   s.rubyforge_project = "has_vimeo_video"
 
