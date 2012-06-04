@@ -3,7 +3,7 @@ module HasVimeoVideo
 
     def has_vimeo_video(attribute, options = nil)
       message = (options and options[:message]) || "only Vimeo URLs are allowed"
-      validates_format_of attribute, with: HasVimeoVideo::VimeoVideo.regex, message: message
+      validates_format_of attribute, with: HasVimeoVideo::VimeoVideo.regex, message: message, allow_nil: true, allow_blank: true
       self.class_eval <<-EOF
         def vimeo
           return @vimeo if @vimeo
