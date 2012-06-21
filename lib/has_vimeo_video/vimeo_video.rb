@@ -2,7 +2,7 @@ module HasVimeoVideo
   class VimeoVideo
     
     def self.regex
-      /http:\/\/(www\.)?vimeo.com\/(\d+)/
+      /https?:\/\/(www\.)?vimeo.com\/(\d+)/
     end
     
     def initialize url

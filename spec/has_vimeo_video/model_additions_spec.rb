@@ -27,6 +27,7 @@ describe HasVimeoVideo::ModelAdditions do
     Post.new(video_url: "http://www.youtube.com/17298435").should_not be_valid
     Post.new(video_url: "http://youtube.com/17298435").should_not be_valid
 
+    Post.new(video_url: "https://www.vimeo.com/17298435").should be_valid
     Post.new(video_url: "http://www.vimeo.com/17298435").should be_valid
     Post.new(video_url: "http://vimeo.com/17298435").should be_valid
   end
