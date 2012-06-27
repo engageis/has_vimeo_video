@@ -26,8 +26,8 @@ describe HasVimeoVideo::VimeoVideo do
     subject.thumbnail.should == subject.info["thumbnail_large"]
   end
 
-  it "should have a nil info object if the video doesn't exist" do
-    new_video("http://vimeo.com/000000000").info.should be_nil
+  it "should have a zeroed info object if the video doesn't exist" do
+    new_video("http://vimeo.com/000000000").info.should == "0"
   end
   
   it "should have a nil thumbnail if the video doesn't exist" do
