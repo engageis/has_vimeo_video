@@ -20,7 +20,7 @@ describe HasVimeoVideo::VimeoVideo do
     subject["thumbnail_large"].empty?.should be_false
   end
   
-  its(:embed_url){ should == "http://player.vimeo.com/video/32733074" }
+  its(:embed_url){ should == "//player.vimeo.com/video/32733074" }
 
   it "should have a thumbnail that is equal to Vimeo's 'thumbnail_large'" do
     subject.thumbnail.should == subject.info["thumbnail_large"]
