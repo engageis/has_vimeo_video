@@ -31,7 +31,7 @@ module HasVimeoVideo
     end
     
     def embed_url
-      "http://player.vimeo.com/video/#{id}"
+      "//player.vimeo.com/video/#{id}"
     end
     
     def thumbnail
